@@ -1,0 +1,23 @@
+{
+    "users":
+        [
+            {
+                "id": 777,
+                "pseudo": "admin",
+                "password": "adminpwd",
+                "isAdmin": false
+            },
+            {
+                "id": 123,
+                "pseudo": "bob",
+                "password": "bobpwd",
+                "isAdmin": false
+            },
+            {
+                "id": 321,
+                "pseudo": "alice",
+                "password": "alicepwd",
+                "isAdmin": false
+            }
+        ]
+}
