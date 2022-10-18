@@ -3,19 +3,19 @@
         [
             {
                 "id": 777,
-                "pseudo": "admin",
+                "username": "admin",
                 "password": "adminpwd",
-                "isAdmin": false
+                "isAdmin": true
             },
             {
                 "id": 123,
-                "pseudo": "bob",
+                "username": "bob",
                 "password": "bobpwd",
                 "isAdmin": false
             },
             {
                 "id": 321,
-                "pseudo": "alice",
+                "username": "alice",
                 "password": "alicepwd",
                 "isAdmin": false
             }

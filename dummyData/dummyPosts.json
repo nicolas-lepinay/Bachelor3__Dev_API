@@ -15,6 +15,21 @@
                 "id": 555,
                 "author_id": 777,
                 "content": "This is a post written by Admin."
+            },
+            {
+                "id": 457,
+                "author_id": 123,
+                "content": "This is yet another post published by Bob."
+            },
+            {
+                "id": 655,
+                "author_id": 321,
+                "content": "This is yet another post published by Alice."
+            },
+            {
+                "id": 556,
+                "author_id": 777,
+                "content": "This is yet another post published by Admin."
             }
         ]
 }

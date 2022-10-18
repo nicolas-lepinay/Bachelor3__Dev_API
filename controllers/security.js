@@ -1,6 +1,7 @@
 const jwt = require("jsonwebtoken");
-let usersData = require('../dummyData/dummyUsers.json');
+const usersData = require('../dummyData/dummyUsers.json');
 
+// Login a user
 module.exports.login = async (req, res) => {
   try {
     // 👩‍🔧 Recherche de l'utilisateur :
@@ -23,7 +24,7 @@ module.exports.login = async (req, res) => {
 
     // ✔️ Requête valide :
     const { password, ...rest } = user;
-    res.status(200).json({...rest, accessToken}); // On renvoit tous les champs sauf le mot de passe (par sécurité)
+    res.status(200).json({...rest, accessToken}); // On ne renvoit pas le mot de passe (par sécurité)
   } catch (err) {
         console.log(err)
         return res.status(500).json(err);
@@ -34,7 +35,7 @@ module.exports.login = async (req, res) => {
 findOne = (username) => {
     try {
         const users = usersData.users;
-        const user = users.find(u => u.pseudo.toLowerCase() === username.toLowerCase());
+        const user = users.find(u => u.username.toLowerCase() === username.toLowerCase());
         return user;
 
     } catch(err) {
